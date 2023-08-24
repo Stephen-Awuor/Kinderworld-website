@@ -1879,6 +1879,34 @@ button.back-to-top {
 	display: flex;
     align-items: center;
 }
+/*==== LOADING ====*/
+.loader{
+	width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 999999999;
+    background-image: url(../images/logo.gif);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center;
+   }
+   .loader img{
+	 height:100%;
+	 width:100%;
+   }
+   .disppear{
+	 animation:vanish 5s forwards;
+   }
+	 @keyframes vanish {
+	   100%{
+		opacity:0;
+		visibility:hidden;
+	   }
+	 }
 /*========================
 	13. INNER CONTENT CSS
 =========================*/
